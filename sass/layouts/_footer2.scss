@@ -30,13 +30,13 @@
   justify-content: center;
   align-items: center;
   transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover {
+    background-color: var(--accent-color);
+  }
 }
 .social-cos:not(:last-child) {
   margin-right: 10px;
 }
 .social-svg {
   fill: var(--text-white);
-}
-.social-links:hover {
-  background-color: var(--accent-color);
 }

@@ -53,11 +53,10 @@ nav > .header-logo {
   font-size: 14px;
   color: var(--primary-text-color);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.header-list .link:hover,
-.header-list .link:focus {
-  color: var(--accent-color);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
 
 .header-list .link.portfolio {
@@ -88,16 +87,6 @@ nav > .header-logo {
   justify-content: center;
   align-items: center;
 }
-.header-mail {
-  display: flex;
-  align-items: center;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
-.header-tel {
-  display: flex;
-  align-items: center;
-  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-}
 
 .mail-ikon {
   display: inline-block;
@@ -119,11 +108,22 @@ nav > .header-logo {
   color: var(--second-color);
 }
 
-.header-mail:hover,
-.header-mail:focus {
-  color: var(--accent-color);
+.header-mail {
+  display: flex;
+  align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
-.header-tel:hover,
-.header-tel:focus {
-  color: var(--accent-color);
+
+.header-tel {
+  display: flex;
+  align-items: center;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  &:hover,
+  &:focus {
+    color: var(--accent-color);
+  }
 }
