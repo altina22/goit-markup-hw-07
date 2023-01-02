@@ -1,0 +1,43 @@
+.attributes {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
+.аttention,
+.techno,
+.plan,
+.punctual {
+  max-width: 270px;
+}
+.features-list {
+  display: flex;
+}
+.аttention,
+.punctual,
+.plan {
+  margin-right: var(--card-set);
+}
+.crisper {
+  display: flex;
+  width: 270px;
+  height: 120px;
+  background: var(--quarter-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+  justify-content: center;
+  align-items: center;
+}
+.ikon {
+  fill: var(--primary-text-color);
+}
+
+.title {
+  margin-bottom: 10px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+}
+.title-text {
+  line-height: 1.71;
+  color: var(--second-color);
+}
