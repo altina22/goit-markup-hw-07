@@ -24,22 +24,11 @@
 .connection__item {
   margin-right: 50px;
 }
-.navigation__list li:last-child {
+.navigation__item:last-child {
   margin-right: 0px;
 }
-.navigation {
-  display: flex;
-}
 
-.navigation a {
-  font-family: 'Raleway', sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-}
-
-.navigation__list .link {
+.navigation__link {
   display: block;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -56,17 +45,17 @@
   }
 }
 
-.navigation__list .link.portfolio {
+.portfolio {
   color: var(--accent-color);
 }
 
-.navigation__list .link.navigation__studia {
+.navigation____link--current {
   color: var(--accent-color);
 }
 .navigation__link {
   position: relative;
 }
-.navigation__studia::after,
+.navigation____link--current::after,
 .portfolio::after {
   position: absolute;
   left: 0;
@@ -94,14 +83,13 @@
 .connection > li + li {
   margin-left: 40px;
 }
-.connection .link {
+
+.connection__mail {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--second-color);
-}
 
-.connection__mail {
   display: flex;
   align-items: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -112,6 +100,11 @@
 }
 
 .connection__tel {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--second-color);
+
   display: flex;
   align-items: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);

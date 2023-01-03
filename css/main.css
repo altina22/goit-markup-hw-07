@@ -14,6 +14,20 @@ ol {
   padding-left: 0px;
 }
 
+.visually-hidden__title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .link {
   text-decoration: none;
 }
@@ -125,25 +139,11 @@ body {
   margin-right: 50px;
 }
 
-.navigation__list li:last-child {
+.navigation__item:last-child {
   margin-right: 0px;
 }
 
-.navigation {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-.navigation a {
-  font-family: "Raleway", sans-serif;
-  font-weight: 700;
-  font-size: 26px;
-  line-height: 1.2;
-  letter-spacing: 0.03em;
-}
-
-.navigation__list .link {
+.navigation__link {
   display: block;
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -156,15 +156,15 @@ body {
   -webkit-transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.navigation__list .link:hover, .navigation__list .link:focus {
+.navigation__link:hover, .navigation__link:focus {
   color: var(--accent-color);
 }
 
-.navigation__list .link.portfolio {
+.portfolio {
   color: var(--accent-color);
 }
 
-.navigation__list .link.navigation__studia {
+.navigation____link--current {
   color: var(--accent-color);
 }
 
@@ -172,7 +172,7 @@ body {
   position: relative;
 }
 
-.navigation__studia::after,
+.navigation____link--current::after,
 .portfolio::after {
   position: absolute;
   left: 0;
@@ -208,14 +208,11 @@ body {
   margin-left: 40px;
 }
 
-.connection .link {
+.connection__mail {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--second-color);
-}
-
-.connection__mail {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -230,6 +227,10 @@ body {
 }
 
 .connection__tel {
+  font-weight: 500;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: var(--second-color);
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
