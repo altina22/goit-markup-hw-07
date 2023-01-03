@@ -9,7 +9,7 @@
   background-position: center;
   margin: 0 auto;
 }
-.hero-title {
+.hero__title {
   margin-bottom: var(--card-set);
   font-weight: 900;
   font-size: 44px;
@@ -23,12 +23,12 @@
   padding-top: 200px;
   padding-bottom: 200px;
 }
-.hero-title {
+.hero__title {
   width: 696px;
   margin-left: auto;
   margin-right: auto;
 }
-.hero-btn {
+.hero__btn {
   text-align: center;
   display: inline-block;
   padding: 10px 24px;

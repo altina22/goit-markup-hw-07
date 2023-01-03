@@ -1,48 +1,45 @@
-header {
+.page-header {
   background-color: var(--text-white);
   border-bottom: 1px solid var(--eighth-color);
   max-width: 1600px;
   margin: 0 auto;
 }
-.header-nav {
-  display: flex;
-  align-items: center;
-}
-.box-container {
+
+.page-header__container {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 1200px;
-  padding: 0px 15px;
-  margin: 0 auto;
 }
-.header-list {
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.navigation__list {
   display: flex;
   margin-left: 93px;
 }
-.header-list > li {
+.navigation__item {
   margin-right: 50px;
 }
-.header-list li:last-child {
+.connection__item {
+  margin-right: 50px;
+}
+.navigation__list li:last-child {
   margin-right: 0px;
 }
-.header-nav {
+.navigation {
   display: flex;
 }
-.header-nav a {
+
+.navigation a {
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
   font-size: 26px;
   line-height: 1.2;
   letter-spacing: 0.03em;
 }
-nav > .header-logo {
-  color: var(--fifth-color);
-}
-.logo {
-  color: var(--accent-color);
-}
-.header-list .link {
+
+.navigation__list .link {
   display: block;
   font-family: 'Roboto', sans-serif;
   font-weight: 500;
@@ -59,17 +56,17 @@ nav > .header-logo {
   }
 }
 
-.header-list .link.portfolio {
+.navigation__list .link.portfolio {
   color: var(--accent-color);
 }
 
-.header-list .link.studia {
+.navigation__list .link.navigation__studia {
   color: var(--accent-color);
 }
-.header-link {
+.navigation__link {
   position: relative;
 }
-.studia::after,
+.navigation__studia::after,
 .portfolio::after {
   position: absolute;
   left: 0;
@@ -81,34 +78,30 @@ nav > .header-logo {
   background-color: var(--accent-color);
   border-radius: 2px;
 }
-.cont-list {
+.connection {
   display: flex;
   margin-left: auto;
   justify-content: center;
   align-items: center;
 }
 
-.mail-ikon {
+.connection__ikon {
   display: inline-block;
   margin-right: 10px;
   fill: currentColor;
 }
-.tel-ikon {
-  display: inline-block;
-  margin-right: 10px;
-  fill: currentColor;
-}
-.cont-list > li + li {
+
+.connection > li + li {
   margin-left: 40px;
 }
-.cont-list .link {
+.connection .link {
   font-weight: 500;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: var(--second-color);
 }
 
-.header-mail {
+.connection__mail {
   display: flex;
   align-items: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -118,7 +111,7 @@ nav > .header-logo {
   }
 }
 
-.header-tel {
+.connection__tel {
   display: flex;
   align-items: center;
   transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);

@@ -1,22 +1,17 @@
-.attributes {
+.features {
   padding-top: 94px;
   padding-bottom: 94px;
 }
-.аttention,
-.techno,
-.plan,
-.punctual {
+.features__item {
   max-width: 270px;
 }
-.features-list {
+.features__list {
   display: flex;
 }
-.аttention,
-.punctual,
-.plan {
+.features__item {
   margin-right: var(--card-set);
 }
-.crisper {
+.features__crisper {
   display: flex;
   width: 270px;
   height: 120px;
@@ -26,18 +21,18 @@
   justify-content: center;
   align-items: center;
 }
-.ikon {
+.features__ikon {
   fill: var(--primary-text-color);
 }
 
-.title {
+.features__title {
   margin-bottom: 10px;
   font-weight: 700;
   font-size: 14px;
   line-height: 1.14;
   text-transform: uppercase;
 }
-.title-text {
+.features__title-text {
   line-height: 1.71;
   color: var(--second-color);
 }
